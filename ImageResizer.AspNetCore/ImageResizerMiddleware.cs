@@ -96,7 +96,7 @@ namespace ImageResizer.AspNetCore
 
             // get the image location on disk
             var imagePath = Path.Combine(
-                rootPath.Replace("\\wwwroot", ""),
+                rootPath.Replace("/wwwroot", ""),
                 path.Value.Replace('/', Path.DirectorySeparatorChar).TrimStart(Path.DirectorySeparatorChar));
 
             // check file lastwrite
